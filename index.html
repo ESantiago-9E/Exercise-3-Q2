@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+
+	<form>
+		<label>Enter Name: </label>
+		<input type="text" id="pangalan">
+		<p id="greet">Hello!</p>     
+		
+		<button type="button" class=" btn btn-primary" onclick="greet('name')">Greet</button>
+	</form>
+
+	<script>
+		
+		function greet(Name){
+			var name = document.getElementById('pangalan').value;
+
+			document.getElementById("greet").innerHTML = 'Hello,' + name + '!';
+		}
+	</script>
+</body>
+</html>
